@@ -20,11 +20,3 @@ node 'servera.puppet.vm' {
 node 'serverb.puppet.vm' {
     include role::servers
 }
-
-node 'serverc.puppet.vm' {
-    include role::servers
-}
-
-node 'serverd.puppet.vm' {
-    include role::servers
-}
