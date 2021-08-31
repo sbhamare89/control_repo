@@ -19,11 +19,11 @@ class profile::agent_nodes {
     ip => '172.18.0.4',
   }
     host {'servera.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.5',
   }
     host {'serverb.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.6',
   }
 }
