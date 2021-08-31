@@ -5,8 +5,6 @@ class profile::agent_nodes {
   dockeragent::node {'minetest.puppet.vm':}
   dockeragent::node {'servera.puppet.vm':}
   dockeragent::node {'serverb.puppet.vm':}
-  dockeragent::node {'serverc.puppet.vm':}
-  dockeragent::node {'serverd.puppet.vm':}
 
   host {'web.puppet.vm':
     ensure => present,
@@ -27,13 +25,5 @@ class profile::agent_nodes {
     host {'serverb.puppet.vm':
     ensure => present,
     ip => '172.18.0.6',
-  }
-    host {'serverc.puppet.vm':
-    ensure => present,
-    ip => '172.18.0.7',
-  }
-    host {'serverd.puppet.vm':
-    ensure => present,
-    ip => '172.18.0.8',
   }
 }
