@@ -3,8 +3,6 @@ class profile::agent_nodes {
   dockeragent::node {'web.puppet.vm':}
   dockeragent::node {'db.puppet.vm':}
   dockeragent::node {'minetest.puppet.vm':}
-  dockeragent::node {'servera.puppet.vm':}
-  dockeragent::node {'serverb.puppet.vm':}
 
   host {'web.puppet.vm':
     ensure => present,
