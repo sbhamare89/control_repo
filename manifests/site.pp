@@ -14,17 +14,17 @@ node 'db.puppet.vm' {
 }
 
 node 's1.puppet.vm' {
-    include role::base_server
+    include role::servers
 }
 
 node 's2.puppet.vm' {
-    include role::base_server
+    include role::servers
 }
 
 node 's3.puppet.vm' {
-    include role::base_server
+    include role::servers
 }
 
 node 's4.puppet.vm' {
-    include role::base_server
+    include role::servers
 }
