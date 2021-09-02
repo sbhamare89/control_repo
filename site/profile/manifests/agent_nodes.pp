@@ -22,22 +22,22 @@ class profile::agent_nodes {
   }
   
   host {'s1.puppet.vm':
-    ensure => present,
+    ensure => absent,
     ip => '172.18.0.5',
   }
   
   host {'s2.puppet.vm':
-    ensure => present,
+    ensure => absent,
     ip => '172.18.0.6',
   }
   
   host {'s3.puppet.vm':
-    ensure => present,
+    ensure => absent,
     ip => '172.18.0.7',
   }
   
   host {'s4.puppet.vm':
-    ensure => present,
+    ensure => absent,
     ip => '172.18.0.8',
   }
 }
