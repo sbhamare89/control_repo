@@ -9,35 +9,35 @@ class profile::agent_nodes {
   dockeragent::node {'s4.puppet.vm':}
 
   host {'web.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.2',
   }
   host {'db.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.3',
   }
   host {'minetest.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.4',
   }
   
   host {'s1.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.5',
   }
   
   host {'s2.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.6',
   }
   
   host {'s3.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.7',
   }
   
   host {'s4.puppet.vm':
-    ensure => absent,
+    ensure => present,
     ip => '172.18.0.8',
   }
 }
